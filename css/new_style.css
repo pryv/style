@@ -357,7 +357,12 @@ th {
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  background-color: white; }
+  background-color: #eef0f2; }
+
+.topbar {
+  background-color: white;
+  border-color: #DBDBDB;
+  height: 50px; }
 
 nav li {
   float: left;
