@@ -1,12 +1,21 @@
 // Variables
 // --------------------------------------------------
-$global-hover-bg:		#BD1727 !default;
-$global-hover-color:	#ffffff !default;
+$global-hover-bg:			#BD1727 !default;
+$global-hover-color:		#ffffff !default;
 //== NAV BAR
 //
 $navbar-default-bg:			#ffffff;
 $navbar-height:				50px;
 $navbar-text-color:			#999;
+//== CARD
+//
+$card-border-color:				#E2E2E2;
+$card-default-bg:					#FFFFFF;
+$card-padding:					20px;
+$card-margin:					20px;
+
+
+
 
 
 //== Colors
@@ -70,7 +79,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit !default;
-$headings-font-weight:    500 !default;
+$headings-font-weight:    100 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;
 
