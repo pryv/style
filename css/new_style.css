@@ -1076,8 +1076,10 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 15pt;
-  margin-bottom: 7.5pt; }
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.1em;
+  padding: 7.5pt 0; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -1087,7 +1089,8 @@ h3, .h3 {
   h3 small,
   h3 .small, .h3 small,
   .h3 .small {
-    font-size: 65%; }
+    font-size: 50%;
+    color: #999999; }
 
 h4, .h4,
 h5, .h5,
@@ -1106,7 +1109,7 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 28pt; }
+  font-size: 33pt; }
 
 h2, .h2 {
   font-size: 23pt; }
@@ -1134,6 +1137,10 @@ p {
   @media (min-width: 768px) {
     .lead {
       font-size: 16.5pt; } }
+
+a {
+  color: #bd1727;
+  text-decoration: none; }
 
 ul {
   list-style-type: none;
@@ -1248,7 +1255,8 @@ small,
   border-color: #222222; }
   .btn-default:hover, .btn-default:focus {
     color: white;
-    background-color: #555555; }
+    background-color: #555555;
+    text-decoration: none; }
 
 .btn-primary {
   color: #bd1727;
@@ -1328,7 +1336,8 @@ input[type="button"].btn-block {
   .center-box {
     margin: 0 5%; }
 
-  .gray-box img.col-md-2 {
+  .gray-box
+  img.col-md-2 {
     float: left;
     width: 120px; } }
 .card {

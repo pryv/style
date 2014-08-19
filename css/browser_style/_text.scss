@@ -24,12 +24,15 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: $line-height-computed;
-  margin-bottom: ($line-height-computed / 2);
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: $headings-line-height;
+  padding:($line-height-computed / 2) 0;
 
   small,
   .small {
-    font-size: 65%;
+    font-size: 50%;
+    color: $font-subheading-color;
   }
 }
 h4, .h4,
@@ -68,6 +71,11 @@ p {
   @media (min-width: $screen-sm-min) {
     font-size: ($font-size-base * 1.5);
   }
+}
+
+a {
+  color: $link-color;
+  text-decoration:none;
 }
 
 ul {

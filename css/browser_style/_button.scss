@@ -77,13 +77,12 @@
   &:focus {
     color: $white;
     background-color: $gray;
-    
+    text-decoration:none;
   }
 }
 .btn-primary {
   color: $brand-primary;
   border-color: $brand-primary;
-  
   &:hover, 
   &:focus {
     color: $white;
