@@ -858,9 +858,20 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
 
+
 //== Animations
 //
 //##
-
-
 $default-time-transition:     0.3s;
+
+
+
+// 
+//== PRYV Cards for browser
+//##
+
+$card-padding: 10px;
+$card-margin: 10px;
+
+$card-default-bg: $white;
+$card-border-color: $gray-lighter;
