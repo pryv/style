@@ -1,21 +1,12 @@
 // Variables
 // --------------------------------------------------
-$global-hover-bg:			#BD1727 !default;
-$global-hover-color:		#ffffff !default;
+$global-hover-bg:		#BD1727 !default;
+$global-hover-color:	#ffffff !default;
 //== NAV BAR
 //
 $navbar-default-bg:			#ffffff;
 $navbar-height:				50px;
 $navbar-text-color:			#999;
-//== CARD
-//
-$card-border-color:				#E2E2E2;
-$card-default-bg:					#FFFFFF;
-$card-padding:					20px;
-$card-margin:					20px;
-
-
-
 
 
 //== Colors
@@ -27,7 +18,11 @@ $gray-dark:              lighten(#000, 20%) !default;   // #333
 $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 60%) !default;   // #999
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+$white:                  #fff;
+$transparent:            'transparent';
 
+
+// buttons
 $brand-primary:         #BD1727 !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #5bc0de !default;
@@ -35,13 +30,13 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
 
-
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #EEF0F2 !default;
+$body-bg:               #F4F4F4 !default;
+$body-fg:               $white !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-dark !default;
 
@@ -61,7 +56,11 @@ $font-family-sans-serif:  'Roboto', Helvetica, Arial, sans-serif !default;
 //$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
+$font-base-color:         #333;
+$font-heading-color:      #333;
+$font-subheading-color:    #999;
+
+$font-size-base:          11pt !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
 
@@ -73,15 +72,16 @@ $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.428571429 !default; // 20/14
+$line-height-base:        1.1em !default; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    100 !default;
-$headings-line-height:    1.1 !default;
-$headings-color:          inherit !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+$headings-font-lightweight:   300;
+$headings-line-height:        1.1em !default;
+$headings-color:              inherit !default;
 
 //== Iconography
 //
@@ -858,3 +858,9 @@ $dl-horizontal-offset:        $component-offset-horizontal !default;
 //** Horizontal line color.
 $hr-border:                   $gray-lighter !default;
 
+//== Animations
+//
+//##
+
+
+$default-time-transition:     0.3s !i

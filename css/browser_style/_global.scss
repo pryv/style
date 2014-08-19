@@ -1,0 +1,27 @@
+body {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  background-color: $body-bg;
+}
+
+/* Angular loading page trigger */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important; 
+}
+
+.spacing {
+  padding:20px;
+}
+
+.inbox {
+  padding:0 0 0.8em 0;
+}
+
+/* animations */ 
+  
+.fadeOn {
+  transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition;
+  -moz-transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition;
+  -webkit-transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition;
+  -o-transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition; 
+}
