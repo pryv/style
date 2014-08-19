@@ -13,8 +13,9 @@
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  background-color: $transparent;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 1px solid $brand-primary;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
@@ -22,9 +23,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-image: none;
-  border: 3px solid rgba(0, 0, 0, 0);
-  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 2px;
   padding: 6px 12px;
 
   &,
@@ -58,21 +58,58 @@
     //@include opacity(.65);
     //@include box-shadow(none);
   }
+  
+  &.btn-lg {
+    padding:10px 16px;
+    font-size: $font-size-large;
+  }
+  
 }
-
 
 // Alternate buttons
 // --------------------------------------------------
 
 .btn-default {
-  color: #333;
-  background-color: #FFF;
-  border-color: #CCC;
+  color: $gray-darker;
+  background-color: $white;
+  border-color: $gray-darker;
+  &:hover, 
+  &:focus {
+    color: $white;
+    background-color: $gray;
+    
+  }
 }
 .btn-primary {
-  color: #FFF;
-  background-color: #1abc9c;
-  border-color: #1abc9c;
+  color: $brand-primary;
+  border-color: $brand-primary;
+  
+  &:hover, 
+  &:focus {
+    color: $white;
+    background-color: $brand-primary;
+  }
+  
+}
+
+.btn-danger {
+  color: $brand-danger;
+  border-color: $brand-danger;
+  &:hover, 
+  &:focus {
+    color: $white;
+    background-color: $brand-danger;
+  }
+}
+
+.btn-success {
+  color: $brand-success;
+  border-color: $brand-success;
+  &:hover, 
+  &:focus {
+    color: $white;
+    background-color: $brand-success;
+  }
 }
 
 

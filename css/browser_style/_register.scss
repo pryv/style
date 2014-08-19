@@ -1,0 +1,36 @@
+//
+// Authentication part ( register + login + onboarding )
+// -----------------------------
+
+/* Box layout */
+
+.center-box {
+  margin:0 20%;
+}
+
+.gray-box {
+  background-color:$transparent;
+  border:1px solid $gray-light;
+  border-radius:5px;
+  margin:10px 0;
+}
+
+.gray-box:hover {
+  background-color:$white;
+  border:1px solid $gray-lighter;
+}
+
+
+// responsive part
+
+@media (max-width: 992px) {
+  
+  .center-box {
+    margin:0 5%;
+  }
+  
+  .gray-box img.col-md-2 {
+    float:left;
+    width:120px;
+  }
+}
