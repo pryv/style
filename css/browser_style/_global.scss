@@ -13,6 +13,11 @@ body {
   padding:20px;
 }
 
+.helper {
+  background: $gray-lighter;
+  color: $gray-dark;
+}
+
 .inbox {
   padding:0 0 0.8em 0;
 }
