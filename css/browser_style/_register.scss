@@ -25,13 +25,8 @@
 }
 
 .disabled * {
-  border:1px solid $gray-light;
+  color: $gray-light;
 }
-
-.disabled:hover {
-  background-color:$transparent;
-}
-
 
 
 // responsive part
