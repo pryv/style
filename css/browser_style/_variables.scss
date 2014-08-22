@@ -1,3 +1,4 @@
+
 // Variables
 // --------------------------------------------------
 $global-hover-bg:		#BD1727 !default;
@@ -7,7 +8,6 @@ $global-hover-color:	#ffffff !default;
 $navbar-default-bg:			#ffffff;
 $navbar-height:				50px;
 $navbar-text-color:			#999;
-
 
 //== Colors
 //
@@ -88,6 +88,9 @@ $headings-color:              inherit !default;
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
+
+@include web-fonts(('Roboto'));
+
 $icon-font-path: "fonts/" !default;
 //** File name for all font files.
 $icon-font-name:          "ss-gizmo" !default;
