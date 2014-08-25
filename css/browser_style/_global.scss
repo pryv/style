@@ -23,11 +23,16 @@ body {
   padding:0 0 0.8em 0;
 }
 
+.logo {
+  margin:0;
+  padding:8px;
+}
+
 /* animations */ 
   
 .fadeOn {
-  
-  @include transition(border-color,color, background $default-time-transition ease-in-out);}
+  @include transition(border-color,color, background $default-time-transition ease-in-out);
+}
 
 .hidden {
   display: none !important;
