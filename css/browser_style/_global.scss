@@ -13,39 +13,41 @@ body {
   padding:20px;
 }
 
+.helper {
+  background: $gray-lighter;
+  color: $gray-dark;
+  margin-bottom:10px;
+}
+
 .inbox {
   padding:0 0 0.8em 0;
+}
+
+.logo {
+  margin:0;
+  padding:8px;
 }
 
 /* animations */ 
   
 .fadeOn {
-  transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition;
-  -moz-transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition;
-  -webkit-transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition;
-  -o-transition: border-color $default-time-transition, color $default-time-transition, background $default-time-transition; 
+  @include transition(border-color,color, background $default-time-transition ease-in-out);
 }
 
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
 
-// Clearfix
-//
-// For modern browsers
-// 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
-// 2. The use of `table` rather than `block` is only necessary if using
-//    `:before` to contain the top-margins of child elements.
-//
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
-
-@mixin clearfix() {
-  &:before,
-  &:after {
-    content: " "; // 1
-    display: table; // 2
-  }
-  &:after {
-    clear: both;
-  }
+.clearfix {
+  @include clearfix();
+}
+.center-block {
+  @include center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
 }

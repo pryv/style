@@ -77,17 +77,17 @@
   &:focus {
     color: $white;
     background-color: $gray;
-    
+    border-color: $gray-darker;
   }
 }
 .btn-primary {
-  color: $brand-primary;
-  border-color: $brand-primary;
-  
+  color: $gray;
+  border-color: $gray;
   &:hover, 
   &:focus {
     color: $white;
     background-color: $brand-primary;
+    border-color: $brand-primary;
   }
   
 }
@@ -99,6 +99,7 @@
   &:focus {
     color: $white;
     background-color: $brand-danger;
+    border-color: $brand-danger;
   }
 }
 
@@ -109,6 +110,7 @@
   &:focus {
     color: $white;
     background-color: $brand-success;
+    border-color: $brand-success;
   }
 }
 

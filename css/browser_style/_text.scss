@@ -15,6 +15,7 @@ h1, h2, h3, h4, h5, h6,
 
   small,
   .small {
+    display:block;
     font-weight: normal;
     line-height: 1;
     color: $headings-small-color;
@@ -22,19 +23,23 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1,
-h2, .h2,
-h3, .h3 {
-  margin-top: $line-height-computed;
-  margin-bottom: ($line-height-computed / 2);
+h2, .h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: $headings-line-height;
+  padding:($line-height-computed / 2) 0;
 
   small,
   .small {
-    font-size: 65%;
+    font-size: 50%;
+    color: $font-subheading-color;
   }
 }
+h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
+  font-weight: $headings-font-lightweight; 
   margin-top: ($line-height-computed / 2);
   margin-bottom: ($line-height-computed / 2);
 
@@ -68,6 +73,11 @@ p {
   @media (min-width: $screen-sm-min) {
     font-size: ($font-size-base * 1.5);
   }
+}
+
+a {
+  color: $link-color;
+  text-decoration:none;
 }
 
 ul {
