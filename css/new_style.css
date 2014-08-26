@@ -391,10 +391,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #bd1727;
+  color: #0d94ff;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #790f19;
+    color: #006bc0;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -1271,7 +1271,7 @@ p {
       font-size: 21px; } }
 
 a {
-  color: #bd1727;
+  color: #0d94ff;
   text-decoration: none; }
 
 ul {
@@ -1396,7 +1396,8 @@ footer {
 
 .btn-primary {
   color: #555555;
-  border-color: #555555; }
+  border-color: #555555;
+  background: white; }
   .btn-primary:hover, .btn-primary:focus {
     color: white;
     background-color: #bd1727;
@@ -1419,7 +1420,7 @@ footer {
     border-color: #5cb85c; }
 
 .btn-link {
-  color: #bd1727;
+  color: #0d94ff;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0; }
@@ -1428,7 +1429,7 @@ footer {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #790f19;
+    color: #006bc0;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
