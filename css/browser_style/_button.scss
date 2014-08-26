@@ -24,7 +24,7 @@
   -ms-user-select: none;
   user-select: none;
   border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 6px 12px;
 
   &,
@@ -70,14 +70,14 @@
 // --------------------------------------------------
 
 .btn-default {
-  color: $gray-darker;
+  color: $brand-primary;
   background-color: $white;
-  border-color: $gray-darker;
+  border-color: $brand-primary;
   &:hover, 
   &:focus {
     color: $white;
-    background-color: $gray;
-    border-color: $gray-darker;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
   }
 }
 .btn-primary {

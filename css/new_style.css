@@ -477,6 +477,10 @@ body {
 .inbox {
   padding: 0 0 0.8em 0; }
 
+.logo {
+  margin: 0;
+  padding: 0px; }
+
 /* animations */
 .fadeOn {
   -webkit-transition: border-color, color, background 0.3s ease-in-out;
@@ -1178,7 +1182,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 1.1em;
   color: inherit; }
   h1 small,
@@ -1364,7 +1368,7 @@ footer {
   -ms-user-select: none;
   user-select: none;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 6px 12px; }
   .btn:hover, .btn:focus {
     color: white;
@@ -1382,13 +1386,13 @@ footer {
     font-size: 18px; }
 
 .btn-default {
-  color: #222222;
+  color: #bd1727;
   background-color: white;
-  border-color: #222222; }
+  border-color: #bd1727; }
   .btn-default:hover, .btn-default:focus {
     color: white;
-    background-color: #555555;
-    border-color: #222222; }
+    background-color: #bd1727;
+    border-color: #bd1727; }
 
 .btn-primary {
   color: #555555;
@@ -1469,9 +1473,6 @@ input[type="button"].btn-block {
 .gray-box:hover {
   background-color: white;
   border: 1px solid #eeeeee; }
-
-.helper {
-  margin: 20px; }
 
 .helper * {
   color: #999999; }
