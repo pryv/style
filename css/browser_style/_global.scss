@@ -10,13 +10,17 @@ body {
 }
 
 .spacing {
-  padding:20px;
+  padding:15px;
 }
 
 .helper {
   background: $gray-lighter;
   color: $gray-dark;
   margin-bottom:10px;
+}
+
+.helper * {
+  color: $gray-light;
 }
 
 .inbox {

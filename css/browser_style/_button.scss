@@ -53,8 +53,8 @@
   &.disabled,
   &[disabled],
   fieldset[disabled] & {
-    cursor: not-allowed;
-    pointer-events: none; // Future-proof disabling of clicks
+    //cursor: not-allowed;
+    //pointer-events: none; // Future-proof disabling of clicks
     color: #DADADA;
     background-color: #F0F0F0;
     border-color: #DFDFDF;

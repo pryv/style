@@ -16,16 +16,12 @@
   background-color:$transparent;
   border:1px solid $gray-lighter;
   border-radius:5px;
-  margin:10px 0;
+  margin:8px 0;
 }
 
 .gray-box:hover {
   background-color:$white;
   border:1px solid $gray-lighter;
-}
-
-.helper * {
-  color: $gray-light;
 }
 
 
