@@ -1496,7 +1496,7 @@ input[type="button"].btn-block {
     width: 90px; } }
 @media (min-width: 992px) {
   .center-box {
-    margin: 0 5%; }
+    margin: 0 20%; }
 
   .gray-box
   img.col-md-1 {
