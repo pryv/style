@@ -34,8 +34,27 @@
   }
   
   .gray-box 
-    img.col-md-2 {
+    img.col-md-1 {
       float:left;
-      width:120px;
+      width:90px;
     }
+}
+
+
+@media (min-width: 992px) {
+  
+  .center-box {
+    margin:0 5%;
+  }
+  
+  .gray-box 
+    img.col-md-1 {
+      float:left;
+      width:12%;
+    }
+  .gray-box 
+  	.col-md-11 {
+	  width:88%;
+		
+  }
 }
