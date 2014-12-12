@@ -1,6 +1,19 @@
 # Pryv style assets
 
-Official CSS & pictures.
+Reference CSS, JS and media files.
+
+## Download
+
+**TODO**
+
+
+## Contributing
+
+### Setup
+
+Install with `npm install`.
+Build with `grunt`, which outputs assets to `dist`.
+
 
 ## License
 
