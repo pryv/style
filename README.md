@@ -3,9 +3,16 @@
 Reference CSS, JS and media files.
 
 
-## Download
+## Usage
 
-**TODO**
+### Basic
+
+Just refer to the published files: http://pryv.github.io/style
+
+
+### Customize
+
+Add a `package.json` dev dependency pointing to this repo, then use and override source files in your build.
 
 
 ## Contributing
