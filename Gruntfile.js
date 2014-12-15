@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     clean: {
-      dist: [ 'dist/*.css', 'dist/assets' ]
+      dist: [ 'dist/*.css', 'dist/*.js', 'dist/fonts', 'dist/images' ]
     },
 
     stylus: {
