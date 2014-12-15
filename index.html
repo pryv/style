@@ -1,136 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>PrYv | Guide Line Pattern</title>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<head>
+  <meta charset="utf-8">
 
-    <!-- Le styles -->
-    <link href="css/doc.css" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/ss-gizmo.css">
-    <link rel="stylesheet" href="css/new_style.css" charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,400italic|Roboto+Condensed:400,300,700" rel="stylesheet" type="text/css">
-    <style>
-      section{margin-top:80px;}
-    </style>
-  </head>
-  <body>
-    <!-- HEADER+++++++++++++++++++++++++++++++++++++++ -->
-   <section style="text-align:center;"> 
-    <!--<h1 class="ss-notebook" style="text-align: center;font-size: 50px;"></h1>-->
-    <h1 style="font-weight: 100;text-align: center;">Guide Line Pattern for</h1>
-    <img src="img/logo/logo_128.png"/>
-   </section> 
-    <!-- NAVBAR+++++++++++++++++++++++++++++++++++++++ -->
-   <section> 
-    <h3>Navbar</h3>
-     <nav class="topbar"> 
-        <div role="navigation">
+  <title>Pryv style assets: examples</title>
 
-            <ul class="nav">
-              <li id="togglePanel" class="logo">
-                <a href="javascript:void(0)"><img src="img/logo/logo_only_50.png"/></a>
-              </li>
-              <li id="addEvent">
-                <a href="javascript:void(0)"><span class="icon ss-plus"></span> <span data-i18n="nav.actions.addEvent">Add content</span></a>
-              </li>
-              <li id="connectApps">
-                <a href="javascript:void(0)"><span class="icon ss-smartphone"></span> <span data-i18n="nav.actions.connectApps">Connect apps</span></a>
-              </li>
-              <li id="manageStream">
-                <a href="javascript:void(0)"><span class="icon ss-sugarpackets"></span> <span data-i18n="nav.actions.manageStreams">Manage streams</span></a>
-              </li>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="dist/images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="120x120" href="dist/images/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="dist/images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon-180x180.png">
+
+  <link rel="stylesheet" href="dist/fonts/ss-gizmo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,400italic,700italic" type="text/css">
+  <link rel="stylesheet" href="dist/pryv.css" charset="utf-8">
+</head>
+<body>
+<div class="container">
+  <header class="text-center">
+    <h1><img src="dist/images/logo/logo-256.png" width="128" alt="Pryv"/><br> style assets</h1>
+  </header>
+
+  <section>
+    <h2 class="page-header">Contents</h2>
+
+    <h4>Base CSS styles</h4>
+
+    <p><a href="dist/pryv.css">pryv.css</a> | <a href="dist/pryv.min.css">pryv.min.css</a></p>
+
+    <h4>Matching Bootstrap JS (minified)</h4>
+
+    <p><a href="dist/bootstrap.min.js">bootstrap.min.js</a></p>
+
+    <h4>Matching Bootstrap icon font + SS Gizmo icon font</h4>
+
+    <p>In <code>fonts</code> folder</p>
+
+    <h4>Icon and logo images</h4>
+
+    <p>In <code>images</code> folder</p>
+  </section>
+
+  <header class="text-center">
+    <h1>Examples</h1>
+  </header>
+
+  <section>
+    <h2 class="page-header">Nav bar</h2>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="navbar-logo">
+            <a href="javascript:void(0)"><img src="dist/images/logo/icon-transparent.svg" width="50"/></a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)"><span class="icon ss-plus"></span> Add content</a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)"><span class="icon ss-smartphone"></span> Connect apps</a>
+          </li>
+
+          <li>
+            <a href="javascript:void(0)"><span class="icon ss-sugarpackets"></span> Manage streams</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown menu <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="javascript:void(0)">Action</a></li>
+              <li><a href="javascript:void(0)">Another action</a></li>
+              <li><a href="javascript:void(0)">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="javascript:void(0)">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="javascript:void(0)">One more separated link</a></li>
             </ul>
-
-            <ul class="nav align-right">
-              <li id="togglePanel" class="logo">
-                <a href="javascript:void(0)"><img src="img/logo/logo_only_50.png"/></a>
-              </li>
-              <li id="addEvent">
-                <a href="javascript:void(0)"><span class="icon ss-plus"></span> <span data-i18n="nav.actions.addEvent">Add content</span></a>
-              </li>
-              <li id="connectApps">
-                <a href="javascript:void(0)"><span class="icon ss-smartphone"></span> <span data-i18n="nav.actions.connectApps">Connect apps</span></a>
-              </li>
-              <li id="manageStream">
-                <a href="javascript:void(0)"><span class="icon ss-sugarpackets"></span> <span data-i18n="nav.actions.manageStreams">Manage streams</span></a>
-              </li>
-            </ul>
-
-        </div>
-     </nav>
-    </section>
-    <!-- TEXT+++++++++++++++++++++++++++++++++++++++ -->
-  <section>
-    <h3>Typo</h3>
-    <article class="card">
-      <h1>h1. Pryv heading</h1>
-      <h2>h2. Pryv heading</h2>
-      <h3>h3. Pryv heading</h3>
-      <h4>h4. Pryv heading</h4>
-      <h5>h5. Pryv heading</h5>
-      <h6>h6. Pryv heading</h6>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur. Pellentesque dapibus, erat at fringilla dictum, mi mi lacinia tellus, eu semper est lacus ac augue. </p>
-      <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur.</p>
-    </article>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </section>
-    <!-- BUTTON+++++++++++++++++++++++++++++++++++++++ -->
-  <section>
-    <h3>Button</h3>
-    <article class="card">
-      <button type="button" class="btn btn-default btn-small">Default small</button>
-      <button type="button" class="btn btn-primary btn-small">Primary small</button>
-      <button type="button" class="btn btn-default">Default</button>
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-default btn-large">Default large</button>
-      <button type="button" class="btn btn-primary btn-large">Primary large</button>
-      <button type="button" class="btn btn-primary btn-large" disabled>Primary large</button>
-      <a href="#">Link simple</a>
-      
-    </article>
-  </section>
-  <!-- LOGO+++++++++++++++++++++++++++++++++++++++
-  TODO: MAKE PIXEL PERFCT LOGO -->
-  <section>
-    <h3>Logo</h3>
-    <h5>TODO: Make pixel perfect & Retina Resources</h5>
-    <article class="card" style="background-color:#D9DCDF;">
 
-    <!--LOGO ONLY -->
-      <img src="img/logo/logo_only_16.png"/>
-      <img src="img/logo/logo_only_32.png"/>
-      <img src="img/logo/logo_only_64.png"/>
-      <img src="img/logo/logo_only_128.png"/>
-      <hr>
-      <img src="img/logo/logo_only_16_white.png"/>
-      <img src="img/logo/logo_only_32_white.png"/>
-      <img src="img/logo/logo_only_64_white.png"/>
-      <img src="img/logo/logo_only_128_white.png"/>
-      <hr>
-      <img src="img/logo/logo_only_16_black.png"/>
-      <img src="img/logo/logo_only_32_black.png"/>
-      <img src="img/logo/logo_only_64_black.png"/>
-      <img src="img/logo/logo_only_128_black.png"/>
-    <!--LOGO -->
-      <hr>
-      <img src="img/logo/logo_64.png"/>
-      <img src="img/logo/logo_128.png"/>
-      <img src="img/logo/logo_256.png"/>
-      <hr>
-      <img src="img/logo/logo_64_white.png"/>
-      <img src="img/logo/logo_128_white.png"/>
-      <img src="img/logo/logo_256_white.png"/>
-      <hr>
-      <img src="img/logo/logo_64_black.png"/>
-      <img src="img/logo/logo_128_black.png"/>
-      <img src="img/logo/logo_256_black.png"/>
+  <section>
+    <h2 class="page-header">Typography</h2>
 
-      
-      
-    </article>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p><strong>Regular paragraph:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur. Pellentesque dapibus, erat at fringilla dictum, mi mi lacinia tellus, eu semper est lacus ac augue. </p>
+
+    <p class="lead"><strong><code>.lead</code> paragraph:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur.</p>
   </section>
-    </body>
-    </html>
+
+  <section>
+    <h2 class="page-header">Buttons</h2>
+
+    <button type="button" class="btn btn-default btn-sm">Default small</button>
+    <button type="button" class="btn btn-primary btn-sm">Primary small</button>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-default" disabled>Default disabled</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary" disabled>Primary disabled</button>
+    <button type="button" class="btn btn-default btn-lg">Default large</button>
+    <button type="button" class="btn btn-primary btn-lg">Primary large</button>
+
+    <a href="javascript:void(0)">Link simple</a>
+  </section>
+
+  <section>
+    <h2 class="page-header">Logo</h2>
+
+    <h3>Icon</h3>
+
+    <h4>Vector SVG</h4>
+
+    <img src="dist/images/logo/icon.svg" width="64"/>
+    <img src="dist/images/logo/icon-white.svg" width="64"/>
+    <img src="dist/images/logo/icon-black.svg" width="64"/>
+    <img src="dist/images/logo/icon-transparent.svg" width="64"/>
+
+    <h4>Bitmap PNG</h4>
+
+    <img src="dist/images/logo/icon-128.png" width="64"/>
+    <img src="dist/images/logo/icon-256.png" width="128"/>
+    <img src="dist/images/logo/icon-512.png" width="256"/>
+
+    <hr>
+
+    <img src="dist/images/logo/icon-128-white.png" width="64"/>
+    <img src="dist/images/logo/icon-256-white.png" width="128"/>
+    <img src="dist/images/logo/icon-512-white.png" width="256"/>
+
+    <hr>
+
+    <img src="dist/images/logo/icon-128-black.png" width="64"/>
+    <img src="dist/images/logo/icon-256-black.png" width="128"/>
+    <img src="dist/images/logo/icon-512-black.png" width="256"/>
+
+    <h3>Full</h3>
+
+    <img src="dist/images/logo/logo-128.png" width="64"/>
+    <img src="dist/images/logo/logo-256.png" width="128"/>
+    <img src="dist/images/logo/logo-512.png" width="256"/>
+
+    <hr>
+
+    <img src="dist/images/logo/logo-128-white.png" width="64"/>
+    <img src="dist/images/logo/logo-256-white.png" width="128"/>
+    <img src="dist/images/logo/logo-512-white.png" width="256"/>
+
+    <hr>
+
+    <img src="dist/images/logo/logo-128-black.png" width="64"/>
+    <img src="dist/images/logo/logo-256-black.png" width="128"/>
+    <img src="dist/images/logo/logo-512-black.png" width="256"/>
+  </section>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="dist/bootstrap.min.js"></script>
+</body>
+</html>
