@@ -7,16 +7,18 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-replace');
 
   grunt.initConfig({
     clean: {
-      dist: [ 'dist/*.css', 'dist/*.js', 'dist/fonts', 'dist/images' ]
+      dist: [ 'dist/*.html', 'dist/*.css', 'dist/*.js', 'dist/fonts', 'dist/images' ]
     },
 
     stylus: {
       pryv: {
         options: {
           paths: ['stylus'],
+          compress: false,
           urlfunc: 'embedurl' // use embedurl('test.png') in our code to trigger Data URI embedding
         },
         files: {
@@ -87,6 +89,26 @@ module.exports = function (grunt) {
       }
     },
 
+    replace: {
+      dist: {
+        options: {
+          patterns: [
+            {
+              match: /href="dist\//g,
+              replacement: 'href="'
+            },
+            {
+              match: /src="dist\//g,
+              replacement: 'src="'
+            }
+          ]
+        },
+        files: {
+          'dist/index.html': 'index.html'
+        }
+      }
+    },
+
     uglify: {
       dist: {
         files: {
@@ -109,5 +131,5 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.registerTask('default', [ 'clean', 'stylus', 'cssmin', 'copy', 'uglify' ]);
+  grunt.registerTask('default', [ 'clean', 'stylus', 'cssmin', 'copy', 'replace', 'uglify' ]);
 };
