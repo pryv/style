@@ -65,7 +65,17 @@ module.exports = function (grunt) {
     },
 
     copy: {
-      assets: {
+      bootstrapAssets: {
+        files: [
+          {
+            expand: true,
+            cwd: bootstrapRoot,
+            src: 'fonts/**',
+            dest: 'dist/'
+          }
+        ]
+      },
+      customAssets: {
         files: [
           {
             expand: true,

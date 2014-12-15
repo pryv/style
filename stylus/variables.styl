@@ -8,6 +8,11 @@ $pryv-dark-gray = #4A4A4A
 $pryv-light-gray = #C8C8C8
 $white = #FFF
 
+$light-type-background = rgba(0, 0, 64, 0.04)
+
+$default-padding = 15px
+
+
 // Bootstrap variables reference: http://getbootstrap.com/customize/#less-variables
 
 // Colors
@@ -42,11 +47,18 @@ $font-family-base = $font-family-sans-serif
 
 $font-size-base = 14px
 
+$font-size-h3 = ceil($font-size-base * 1.5)
+$font-size-h6 = $font-size-base
+
 $headings-font-family = inherit
 $headings-font-weight = 300
 $headings-line-height = 1.1
 
-// Iconography: TODO
+// Iconography
+
+$icon-font-path = 'fonts/'
+//** File name for all font files.
+$icon-font-name = 'glyphicons-halflings-regular'
 
 // Components
 
@@ -56,8 +68,6 @@ $border-radius-small = 2px
 
 $component-active-color = $white
 $component-active-bg = $brand-primary
-
-// Tables: TODO
 
 // Buttons
 
@@ -71,16 +81,6 @@ $btn-primary-color = $white
 $btn-primary-bg = $brand-primary
 $btn-primary-border = darken($btn-primary-bg, 5%)
 
-// Forms: TODO
-
-// Dropdowns: TODO
-
-// Media queries breakpoints: TODO
-
-// Grid system: TODO
-
-// Container sizes: TODO
-
 // Navbar
 
 $navbar-default-bg = $white
@@ -91,4 +91,9 @@ $navbar-text-color = $gray-light
 $navbar-default-link-hover-color = $white
 $navbar-default-link-hover-bg = $brand-primary
 
-// ...: TODO
+// Code
+
+$code-color = $text-color
+$code-bg = $light-type-background
+$pre-color = $code-color
+$pre-bg = $code-bg
