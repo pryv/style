@@ -1,18 +1,19 @@
+// Custom stuff
+
+.container.container-narrow
+  max-width: 700px
+
+
 // Typography
 
-h3
-  font-weight: 700
+h1
+  font-weight: 300
+
+h3, h5
   text-transform: uppercase
 
 h4
   font-weight: 400
-
-h5
-  font-weight: 700
-  text-transform: uppercase
-
-h6
-  font-weight: 700
 
 // Navbar
 
@@ -30,10 +31,32 @@ pre
 
 // Type
 
+$page-header-vpadding = ceil($default-padding * 0.5)
+$page-header-hline-overflow = ceil($default-padding * 1.5)
+$page-header-hline-border = 2px dotted $text-color
+$page-header-hline-voffset = "calc(%s + %sem - 1px)" % ($page-header-vpadding $headings-line-height/2)
+
 .page-header
-  padding: ceil($default-padding * 0.75) $default-padding
-  margin-left: - $default-padding
-  margin-right: - $default-padding
+  position: relative
+  padding: $page-header-vpadding $page-header-hline-overflow
+  margin-left: - $page-header-hline-overflow
+  margin-right: - $page-header-hline-overflow
   border: none
-  background-color: $light-type-background-hex
-  background-color: $light-type-background
+  overflow: hidden
+
+  &:before, &:after
+    position: absolute
+    content: ""
+    z-index: 3
+    width: 100%
+    height: 0
+
+  &:before
+    top: $page-header-hline-voffset
+    margin-left: calc(-100% - 5px)
+    border-bottom: $page-header-hline-border
+
+  &:after
+    bottom: $page-header-hline-voffset
+    margin-left: 5px
+    border-top: $page-header-hline-border

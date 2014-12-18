@@ -34,6 +34,13 @@ module.exports = function (grunt) {
         options: {
           debounceDelay: 250
         }
+      },
+      html: {
+        files: '*.html',
+        tasks: ['replace'],
+        options: {
+          debounceDelay: 250
+        }
       }
     },
 
