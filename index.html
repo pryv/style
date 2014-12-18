@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Pryv style assets: examples</title>
+  <title>Pryv style assets</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -17,37 +17,121 @@
   <link rel="stylesheet" href="pryv.css" charset="utf-8">
 </head>
 <body>
-<div class="container">
+<div class="container container-narrow">
   <header class="text-center">
     <h1><img src="images/logo/logo-256.png" width="128" alt="Pryv"/><br> style assets</h1>
+
+    <p>Reference CSS, JS and media files. Based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a>.</p>
   </header>
 
   <section>
     <h2 class="page-header">Contents</h2>
 
-    <h4>Base CSS styles</h4>
+    <p>For customized builds, see the <a href="https://github.com/pryv/style">source repository</a>.</p>
+
+
+    <h3>Stylesheets</h3>
 
     <p><a href="pryv.css">pryv.css</a> | <a href="pryv.min.css">pryv.min.css</a></p>
 
-    <h4>Matching Bootstrap JS (minified)</h4>
+
+    <h3>Scripts</h3>
 
     <p><a href="bootstrap.min.js">bootstrap.min.js</a></p>
 
-    <h4>Matching Bootstrap icon font + SS Gizmo icon font</h4>
 
-    <p>In <code>fonts</code> folder</p>
+    <h3>Fonts</h3>
 
-    <h4>Icon and logo images</h4>
+    <p>In the <code>fonts</code> folder:</p>
+    <ul>
+      <li>Bootstrap Glyphicons font files (referred to from the CSS)</li>
+      <li>SS Gizmo icon font: <a href="fonts/ss-gizmo.css">ss-gizmo.css</a> (<a href="fonts/icon-ref.html">icon reference</a>)</li>
+    </ul>
 
-    <p>In <code>images</code> folder</p>
+
+    <h3>Images</h3>
+
+    <p>In the <code>images</code> folder.</p>
+
+    <h4>Pryv icon</h4>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Regular</th>
+          <th>White</th>
+          <th>Black</th>
+          <th>Transparent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>SVG</th>
+          <td><img src="images/logo/icon.svg" width="64"/><br/>
+            <a href="images/logo/icon.svg">logo/icon.svg</a></td>
+          <td><img src="images/logo/icon-white.svg" width="64"/><br/>
+            <a href="images/logo/icon-white.svg">logo/icon-white.svg</a></td>
+          <td><img src="images/logo/icon-black.svg" width="64"/><br/>
+            <a href="images/logo/icon-black.svg">logo/icon-black.svg</a></td>
+          <td><img src="images/logo/icon-transparent.svg" width="64"/><br/>
+            <a href="images/logo/icon-transparent.svg">logo/icon-transparent.svg</a></td>
+        </tr>
+
+        <tr>
+          <th>PNG</th>
+          <td><img src="images/logo/icon-128.png" width="64"/><br/>
+            <a href="images/logo/icon-128.png">logo/icon-128.png</a><br/>
+            <a href="images/logo/icon-256.png">logo/icon-256.png</a><br/>
+            <a href="images/logo/icon-512.png">logo/icon-512.png</a></td>
+          <td><img src="images/logo/icon-128-white.png" width="64"/><br/>
+            <a href="images/logo/icon-128-white.png">logo/icon-128-white.png</a><br/>
+            <a href="images/logo/icon-256-white.png">logo/icon-256-white.png</a><br/>
+            <a href="images/logo/icon-512-white.png">logo/icon-512-white.png</a></td>
+          <td><img src="images/logo/icon-128-black.png" width="64"/><br/>
+            <a href="images/logo/icon-128-black.png">logo/icon-128-black.png</a><br/>
+            <a href="images/logo/icon-256-black.png">logo/icon-256-black.png</a><br/>
+            <a href="images/logo/icon-512-black.png">logo/icon-512-black.png</a></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h4>Full logo</h4>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Regular</th>
+          <th>White</th>
+          <th>Black</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>PNG</th>
+          <td><img src="images/logo/logo-128.png" width="64"/><br/>
+            <a href="images/logo/logo-128.png">logo/logo-128.png</a><br/>
+            <a href="images/logo/logo-256.png">logo/logo-256.png</a><br/>
+            <a href="images/logo/logo-512.png">logo/logo-512.png</a></td>
+          <td><img src="images/logo/logo-128-white.png" width="64"/><br/>
+            <a href="images/logo/logo-128-white.png">logo/logo-128-white.png</a><br/>
+            <a href="images/logo/logo-256-white.png">logo/logo-256-white.png</a><br/>
+            <a href="images/logo/logo-512-white.png">logo/logo-512-white.png</a></td>
+          <td><img src="images/logo/logo-128-black.png" width="64"/><br/>
+            <a href="images/logo/logo-128-black.png">logo/logo-128-black.png</a><br/>
+            <a href="images/logo/logo-256-black.png">logo/logo-256-black.png</a><br/>
+            <a href="images/logo/logo-512-black.png">logo/logo-512-black.png</a></td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
-  <header class="text-center">
-    <h1>Examples</h1>
-  </header>
-
   <section>
-    <h2 class="page-header">Nav bar</h2>
+    <h2 class="page-header">Examples</h2>
+
+    <h3>Nav bar</h3>
 
     <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
@@ -85,10 +169,9 @@
         </ul>
       </div>
     </nav>
-  </section>
 
-  <section>
-    <h2 class="page-header">Typography</h2>
+
+    <h3>Typography</h3>
 
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
@@ -97,13 +180,12 @@
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
 
-    <p><strong>Regular paragraph:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur. Pellentesque dapibus, erat at fringilla dictum, mi mi lacinia tellus, eu semper est lacus ac augue. </p>
+    <p><strong>This is a regular paragraph.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur. Pellentesque dapibus, erat at fringilla dictum, mi mi lacinia tellus, eu semper est lacus ac augue. </p>
 
-    <p class="lead"><strong><code>.lead</code> paragraph:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur.</p>
-  </section>
+    <p class="lead"><strong>This is a <code>.lead</code> paragraph.</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam massa, vulputate non placerat vel, vehicula non justo. Ut euismod euismod justo commodo consectetur.</p>
 
-  <section>
-    <h2 class="page-header">Buttons</h2>
+
+    <h3>Buttons</h3>
 
     <button type="button" class="btn btn-default btn-sm">Default small</button>
     <button type="button" class="btn btn-primary btn-sm">Primary small</button>
@@ -115,55 +197,6 @@
     <button type="button" class="btn btn-primary btn-lg">Primary large</button>
 
     <a href="javascript:void(0)">Link simple</a>
-  </section>
-
-  <section>
-    <h2 class="page-header">Logo</h2>
-
-    <h3>Icon</h3>
-
-    <h4>Vector SVG</h4>
-
-    <img src="images/logo/icon.svg" width="64"/>
-    <img src="images/logo/icon-white.svg" width="64"/>
-    <img src="images/logo/icon-black.svg" width="64"/>
-    <img src="images/logo/icon-transparent.svg" width="64"/>
-
-    <h4>Bitmap PNG</h4>
-
-    <img src="images/logo/icon-128.png" width="64"/>
-    <img src="images/logo/icon-256.png" width="128"/>
-    <img src="images/logo/icon-512.png" width="256"/>
-
-    <hr>
-
-    <img src="images/logo/icon-128-white.png" width="64"/>
-    <img src="images/logo/icon-256-white.png" width="128"/>
-    <img src="images/logo/icon-512-white.png" width="256"/>
-
-    <hr>
-
-    <img src="images/logo/icon-128-black.png" width="64"/>
-    <img src="images/logo/icon-256-black.png" width="128"/>
-    <img src="images/logo/icon-512-black.png" width="256"/>
-
-    <h3>Full</h3>
-
-    <img src="images/logo/logo-128.png" width="64"/>
-    <img src="images/logo/logo-256.png" width="128"/>
-    <img src="images/logo/logo-512.png" width="256"/>
-
-    <hr>
-
-    <img src="images/logo/logo-128-white.png" width="64"/>
-    <img src="images/logo/logo-256-white.png" width="128"/>
-    <img src="images/logo/logo-512-white.png" width="256"/>
-
-    <hr>
-
-    <img src="images/logo/logo-128-black.png" width="64"/>
-    <img src="images/logo/logo-256-black.png" width="128"/>
-    <img src="images/logo/logo-512-black.png" width="256"/>
   </section>
 </div>
 
