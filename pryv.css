@@ -6281,8 +6281,10 @@ strong {
 .lead strong {
   font-weight: 500;
 }
-.navbar > .container-fluid .navbar-logo {
-  margin-left: -15px;
+@media (min-width: 768px) {
+  .navbar > .container-fluid .navbar-logo {
+    margin-left: -15px;
+  }
 }
 .navbar-nav > li.navbar-logo > a {
   padding: 0;
