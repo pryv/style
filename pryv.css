@@ -6310,12 +6310,12 @@ pre {
   height: 0;
 }
 .page-header:before {
-  top: calc(8px + 0.55em - 1px);
+  top: calc(8px + 0.55em + 3px);
   margin-left: calc(-100% - 5px);
   border-bottom: 2px dotted #1a1a1a;
 }
 .page-header:after {
-  bottom: calc(8px + 0.55em - 1px);
+  bottom: calc(8px + 0.55em - 5px);
   margin-left: 5px;
   border-top: 2px dotted #1a1a1a;
 }
