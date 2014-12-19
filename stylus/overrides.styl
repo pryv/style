@@ -50,7 +50,8 @@ pre
 $page-header-vpadding = ceil($default-padding * 0.5)
 $page-header-hline-overflow = ceil($default-padding * 1.5)
 $page-header-hline-border = 2px dotted $text-color
-$page-header-hline-voffset = "calc(%s + %sem - 1px)" % ($page-header-vpadding $headings-line-height/2)
+$page-header-hline-voffset-top = "calc(%s + %sem + 3px)" % ($page-header-vpadding $headings-line-height/2)
+$page-header-hline-voffset-bottom = "calc(%s + %sem - 5px)" % ($page-header-vpadding $headings-line-height/2)
 
 .page-header
   position: relative
@@ -68,11 +69,11 @@ $page-header-hline-voffset = "calc(%s + %sem - 1px)" % ($page-header-vpadding $h
     height: 0
 
   &:before
-    top: $page-header-hline-voffset
+    top: $page-header-hline-voffset-top
     margin-left: calc(-100% - 5px)
     border-bottom: $page-header-hline-border
 
   &:after
-    bottom: $page-header-hline-voffset
+    bottom: $page-header-hline-voffset-bottom
     margin-left: 5px
     border-top: $page-header-hline-border
