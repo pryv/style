@@ -40,6 +40,19 @@ strong
   padding: 0
   background-color: $pryv-dark-gray
 
+// Tables
+
+.table
+  &> thead > tr > th
+    border-bottom: 1px solid $table-border-color
+  &> thead > tr > th,
+  &> tbody > tr > th,
+  &> tfoot > tr > th,
+  &> thead > tr > td,
+  &> tbody > tr > td,
+  &> tfoot > tr > td
+    border-top: 1px dotted $table-border-color
+
 // Code
 
 pre
