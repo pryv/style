@@ -6333,3 +6333,7 @@ pre {
   padding: 0.5em 11px;
   border: none;
 }
+.hljs {
+  padding: unset;
+  background: unset;
+}
