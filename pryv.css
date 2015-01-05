@@ -6301,9 +6301,6 @@ strong {
 .table> tfoot > tr > td {
   border-top: 1px dotted #c8c8c8;
 }
-pre {
-  border: none;
-}
 .page-header {
   position: relative;
   padding: 8px 23px;
@@ -6329,4 +6326,10 @@ pre {
   bottom: calc(8px + 0.55em - 5px);
   margin-left: 5px;
   border-top: 2px dotted #1a1a1a;
+}
+pre {
+  margin-left: -11px;
+  margin-right: -11px;
+  padding: 0.5em 11px;
+  border: none;
 }
