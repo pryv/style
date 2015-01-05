@@ -53,11 +53,6 @@ strong
   &> tfoot > tr > td
     border-top: 1px dotted $table-border-color
 
-// Code
-
-pre
-  border: none
-
 // Type
 
 $page-header-vpadding = ceil($default-padding * 0.5)
@@ -90,3 +85,13 @@ $page-header-hline-voffset-bottom = "calc(%s + %sem - 5px)" % ($page-header-vpad
     bottom: $page-header-hline-voffset-bottom
     margin-left: 5px
     border-top: $page-header-hline-border
+
+// Code
+
+pre
+  margin-left: - floor($page-header-hline-overflow / 2)
+  margin-right: - floor($page-header-hline-overflow / 2)
+  padding: 0.5em floor($page-header-hline-overflow / 2)
+  border: none
+
+
