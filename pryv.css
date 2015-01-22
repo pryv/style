@@ -6334,6 +6334,6 @@ pre {
   border: none;
 }
 .hljs {
-  padding: unset;
-  background: unset;
+  padding: 0;
+  background: transparent;
 }
