@@ -17,7 +17,7 @@ module.exports = function (grunt) {
     stylus: {
       pryv: {
         options: {
-          paths: ['stylus', 'node_modules/bootstrap-styl/stylus'],
+          paths: ['stylus'],
           compress: false,
           urlfunc: 'embedurl' // use embedurl('test.png') in our code to trigger Data URI embedding
         },
