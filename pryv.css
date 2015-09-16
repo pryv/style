@@ -4617,7 +4617,7 @@ a.label:focus {
   min-width: 10px;
   padding: 3px 7px;
   font-size: 13px;
-  font-weight: bold;
+  font-weight: 500;
   color: #fff;
   line-height: 1;
   vertical-align: baseline;
@@ -4731,7 +4731,7 @@ a.thumbnail.active {
   color: inherit;
 }
 .alert .alert-link {
-  font-weight: bold;
+  font-weight: 500;
 }
 .alert > p,
 .alert > ul {
@@ -5468,7 +5468,7 @@ a.list-group-item-danger.active:focus {
 .close {
   float: right;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -6280,8 +6280,14 @@ h6,
 .h6 {
   font-weight: 500;
 }
+b,
 strong,
-th {
+optgroup,
+dt,
+th,
+kbd kbd,
+label,
+.label {
   font-weight: 500;
 }
 .lead strong {
@@ -6314,31 +6320,6 @@ th {
 .table> tfoot > tr > td {
   border-top: 1px dotted #c8c8c8;
 }
-ul:not(.nav):not(.dropdown-menu),
-ol {
-  padding-left: 0;
-}
-ul:not(.nav):not(.dropdown-menu) > li,
-ol > li {
-  position: relative;
-  padding-left: 1.25em;
-  list-style-type: none;
-}
-ul:not(.nav):not(.dropdown-menu) > li:before,
-ol > li:before {
-  position: absolute;
-  left: 0;
-}
-ul:not(.nav):not(.dropdown-menu) > li:before {
-  content: "—";
-}
-ol {
-  counter-reset: ol-counter;
-}
-ol > li:before {
-  content: counter(ol-counter) ".";
-  counter-increment: ol-counter;
-}
 hr {
   border-top: 1px dotted #1a1a1a;
 }
@@ -6369,16 +6350,16 @@ hr {
   border-top: 2px dotted #1a1a1a;
 }
 section.highlight {
-  margin-left: -14px;
-  margin-right: -14px;
-  padding: 11px 14px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 11px 15px;
   border: 1px dotted #1a1a1a;
   background-color: #fff;
 }
 pre {
-  margin-left: -14px;
-  margin-right: -14px;
-  padding: 11px 14px;
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 11px 15px;
   border: none;
 }
 .hljs {
