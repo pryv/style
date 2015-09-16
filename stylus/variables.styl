@@ -39,24 +39,30 @@ $body-fg ?= $white
 
 $text-color ?= $pryv-black
 
-$link-color ?= #0D94FF
+$link-color ?= $brand-primary
 $link-hover-color ?= darken($link-color, 15%)
 $link-hover-decoration ?= underline
 
 // Typography
 
 $font-family-sans-serif ?= 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif
+$font-family-condensed ?= 'Roboto Condensed', $font-family-sans-serif
 $font-family-base ?= $font-family-sans-serif
 
 $font-size-base ?= 16px
 
-$font-size-h1 ?= floor($font-size-base * 2.428571429) // = 34 / 14
-$font-size-h2 ?= floor($font-size-base * 2) // = 24 / 14
-$font-size-h3 ?= ceil($font-size-base * 1.428571429) // = 20 / 14
-$font-size-h4 ?= ceil($font-size-base * 1.142857143) // = 16 / 14
-$font-size-h5 ?= $font-size-h6 ?= $font-size-base
+// use modular scale: major third
+$font-scale-factor = 1.3333
 
-$headings-font-family ?= inherit
+$font-size-large ?= ceil($font-size-base * $font-scale-factor)
+$font-size-small ?= ceil($font-size-base / $font-scale-factor)
+
+$font-size-h1 ?= floor($font-size-base * ($font-scale-factor ** 3))
+$font-size-h2 ?= floor($font-size-base * ($font-scale-factor ** 2))
+$font-size-h3 ?= ceil($font-size-base * $font-scale-factor)
+$font-size-h4 ?= $font-size-h5 ?= $font-size-h6 ?= $font-size-base
+
+$headings-font-family ?= $font-family-condensed
 $headings-font-weight ?= 500
 $headings-line-height ?= 1.1
 

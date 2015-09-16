@@ -6,31 +6,53 @@
 
 // Typography
 
+uppercase()
+  text-transform: uppercase
+  letter-spacing: 0.05em
+
+$border-large-width = 2px
+$border-large = $border-large-width dotted $text-color
+$border-small-width = 1px
+$border-small = $border-small-width dotted $text-color
+
 h1, .h1,
 h2, .h2,
-h3, .h3
-  margin-top: ceil($line-height-computed * 1.5)
-  margin-bottom: ceil($line-height-computed / 2)
+h3, .h3,
+h4, .h4
+  //margin-top: ceil($line-height-computed * 1.5)
+  //margin-bottom: ceil($line-height-computed / 2)
+  uppercase()
 
 h1
   font-weight: 300
-
-h4
+h2, .h2
   font-weight: 400
-
-h3, h5
-  text-transform: uppercase
-
-h3, h5, h6
+h3, .h3
   font-weight: 700
-
-strong
+h4, .h4
   font-weight: 700
-
-.lead strong
+h5, .h5
+  uppercase()
+  font-weight: 500
+h6, .h6
   font-weight: 500
 
+
+strong, th
+  font-weight: 500
+
+.lead strong
+  font-weight: 400
+
+
 // Navbar
+
+.navbar-nav > li > a,
+.dropdown-menu > li > a,
+.btn
+  font-family: $font-family-condensed
+  text-transform: uppercase
+  letter-spacing: 0.02em
 
 @media (min-width $grid-float-breakpoint)
   .navbar > .container-fluid .navbar-logo
@@ -55,17 +77,19 @@ strong
 
 // Type
 
+hr
+  border-top: $border-small
+
 $page-header-vpadding = ceil($default-padding * 0.5)
-$page-header-hline-overflow = ceil($default-padding * 1.5)
-$page-header-hline-border = 2px dotted $text-color
-$page-header-hline-voffset-top = "calc(%s + %sem + 3px)" % ($page-header-vpadding $headings-line-height/2)
-$page-header-hline-voffset-bottom = "calc(%s + %sem - 5px)" % ($page-header-vpadding $headings-line-height/2)
+$page-header-hline-border = $border-large
+$page-header-hline-voffset-top = "calc(%s + %sem + 3px)" % ($page-header-vpadding $headings-line-height*0.35)
+$page-header-hline-voffset-bottom = "calc(%s + %sem - 5px)" % ($page-header-vpadding $headings-line-height*0.65)
 
 .page-header
   position: relative
-  padding: $page-header-vpadding $page-header-hline-overflow
-  margin-left: - $page-header-hline-overflow
-  margin-right: - $page-header-hline-overflow
+  padding: $page-header-vpadding $grid-gutter-width
+  margin-left: - $grid-gutter-width
+  margin-right: - $grid-gutter-width
   border: none
   overflow: hidden
 
@@ -78,20 +102,28 @@ $page-header-hline-voffset-bottom = "calc(%s + %sem - 5px)" % ($page-header-vpad
 
   &:before
     top: $page-header-hline-voffset-top
-    margin-left: calc(-100% - 5px)
+    margin-left: calc(-100% - 0.25em)
     border-bottom: $page-header-hline-border
 
   &:after
     bottom: $page-header-hline-voffset-bottom
-    margin-left: 5px
+    margin-left: 0.25em
     border-top: $page-header-hline-border
+
+text-group()
+  margin-left: - floor($grid-gutter-width / 2)
+  margin-right: - floor($grid-gutter-width / 2)
+  padding: ($line-height-computed / 2) floor($grid-gutter-width / 2)
+
+section.highlight
+  text-group()
+  border: $border-small
+  background-color: $white
 
 // Code
 
 pre
-  margin-left: - floor($page-header-hline-overflow / 2)
-  margin-right: - floor($page-header-hline-overflow / 2)
-  padding: 0.5em floor($page-header-hline-overflow / 2)
+  text-group()
   border: none
 
 // play nicer with Highlight.js
