@@ -19,8 +19,6 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4
-  //margin-top: ceil($line-height-computed * 1.5)
-  //margin-bottom: ceil($line-height-computed / 2)
   uppercase()
 
 h1
@@ -47,12 +45,15 @@ strong, th
 
 // Navbar
 
-.navbar-nav > li > a,
-.dropdown-menu > li > a,
-.btn
+nav-or-action()
   font-family: $font-family-condensed
   text-transform: uppercase
   letter-spacing: 0.02em
+
+.navbar-nav > li > a,
+.dropdown-menu > li > a,
+.btn
+  nav-or-action()
 
 @media (min-width $grid-float-breakpoint)
   .navbar > .container-fluid .navbar-logo
@@ -76,6 +77,25 @@ strong, th
     border-top: 1px dotted $table-border-color
 
 // Type
+
+ul:not(.nav):not(.dropdown-menu),
+ol
+  padding-left: 0
+  & > li
+    position: relative
+    padding-left: 1.25em
+    list-style-type: none
+    &:before
+      position: absolute
+      left: 0
+ul:not(.nav):not(.dropdown-menu) > li:before
+  content: "—"
+ol
+  counter-reset: ol-counter
+ol > li:before
+  content: counter(ol-counter)"."
+  counter-increment: ol-counter
+
 
 hr
   border-top: $border-small
@@ -110,10 +130,11 @@ $page-header-hline-voffset-bottom = "calc(%s + %sem - 5px)" % ($page-header-vpad
     margin-left: 0.25em
     border-top: $page-header-hline-border
 
+$text-group-outside-margin = floor($grid-gutter-width / 2) - 1px
 text-group()
-  margin-left: - floor($grid-gutter-width / 2)
-  margin-right: - floor($grid-gutter-width / 2)
-  padding: ($line-height-computed / 2) floor($grid-gutter-width / 2)
+  margin-left: - $text-group-outside-margin
+  margin-right: - $text-group-outside-margin
+  padding: ($line-height-computed / 2) $text-group-outside-margin
 
 section.highlight
   text-group()
