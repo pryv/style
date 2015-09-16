@@ -37,9 +37,17 @@ h5, .h5
 h6, .h6
   font-weight: 500
 
+// Fix "bold" weights to match actual fonts
 
-strong, th
-  font-weight: 500
+b,
+strong,
+optgroup,
+dt,
+th,
+kbd kbd,
+label,
+.label
+  font-weight: $bold-weight
 
 .lead strong
   font-weight: 400

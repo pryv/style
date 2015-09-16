@@ -123,3 +123,8 @@ $code-color ?= $text-color
 $code-bg ?= $light-type-background
 $pre-color ?= $code-color
 $pre-bg ?= $code-bg
+
+// Fix "bold" weights to match actual fonts
+
+$bold-weight ?= 500
+$alert-link-font-weight ?= $badge-font-weight ?= $close-font-weight ?= $bold-weight
