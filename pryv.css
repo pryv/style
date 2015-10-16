@@ -6248,10 +6248,10 @@ h1,
 .h1,
 h2,
 .h2,
-h3,
-.h3,
 h4,
-.h4 {
+.h4,
+h5,
+.h5 {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -6264,7 +6264,8 @@ h2,
 }
 h3,
 .h3 {
-  font-weight: 700;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;
 }
 h4,
 .h4 {
@@ -6272,13 +6273,13 @@ h4,
 }
 h5,
 .h5 {
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 500;
+  font-weight: 400;
 }
 h6,
 .h6 {
-  font-weight: 500;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 b,
 strong,
