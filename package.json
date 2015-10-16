@@ -1,6 +1,6 @@
 {
   "name": "pryv-style",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Pryv style assets: reference CSS, JS and media files (based on Bootstrap).",
   "repository": {
     "type": "git",
