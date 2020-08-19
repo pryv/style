@@ -7,13 +7,11 @@ Reference CSS, JS and media files.
 
 ### Basic
 
-Just refer to the published files: http://pryv.github.io/style
-
+Just refer to the published files: https://api.pryv.com/style
 
 ### Customize
 
 Add a `package.json` dev dependency pointing to this repo, then use and override source files in your build.
-
 
 ## Contributing
 
@@ -22,12 +20,10 @@ Add a `package.json` dev dependency pointing to this repo, then use and override
 Install with `./dev-env/setup.sh` (which handles cloning of the `gh-pages` branch into `dist` for publishing) or `npm install`.
 Build with `grunt`, which outputs assets to `dist`.
 
-
 ### Do stuff
 
 - Styles (i.e. Bootstrap variables and overrides) are in `stylus`
 - Media assets are in `assets`
-
 
 ### Publish
 
