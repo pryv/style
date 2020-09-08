@@ -1,0 +1,24 @@
+
+.btn {
+    text-transform: uppercase;
+  }
+  
+  .btn-pryv-small {
+     padding: 0 10px 0 0;
+     /*line-height: 0;*/
+     color: black;
+     font-size: 12px;
+    border-color: #bdbdbd;
+    background-color: #ffffff;
+    border-radius: 1px;
+   }
+  
+  .btn-pryv-small img {
+    margin: -1px 10px -1px -1px;
+  }
+  
+  .btn-primary.disabled,.btn-secondary.disabled, .btn-primary:disabled,.btn-secondary:disabled {
+    color: #c1c1c1;
+    background-color: #f1f1f1;
+    border-color: #e6e6e6;
+  }
