@@ -18,7 +18,7 @@ Add a `package.json` dev dependency pointing to this repo, then use and override
 ### Setup
 
 Install with `./dev-env/setup.sh` (which handles cloning of the `gh-pages` branch into `dist` for publishing) or `npm install`.
-Build with `grunt`, which outputs assets to `dist`.
+Build with `npm run build`, which outputs assets to `dist`.
 
 ### Do stuff
 
